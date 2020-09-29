@@ -18,7 +18,7 @@ Let me introduce our team.
 
 **Topic**
 
-- Predicting the winning rate, batting average and ERA (average earned run) for each team in the KBO regular season
+- Predicting the winning rate, batting average and ERA (average earned run) for each team in the KBO regular season.
 
   
 
