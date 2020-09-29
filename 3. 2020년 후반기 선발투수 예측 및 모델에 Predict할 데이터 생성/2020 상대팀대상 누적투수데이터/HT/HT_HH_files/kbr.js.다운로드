@@ -1,0 +1,25 @@
+$(document).ready(function(){
+	   $(window).bind('scroll', function() {
+			 if ($(window).scrollTop() > 100) {
+				 $('.nav').addClass('fixed');
+				 $('.nav').css('top', 0);
+				 $('.top-score-box').css('margin-top', '-60px');
+				 $('.top-statplus-box').css('margin-top', '-60px');
+				 $('.top-history-box').css('margin-top', '-60px');
+				 $('.top-statdic-box').css('margin-top', '-60px');
+			 }
+			 else {
+				 $('.nav').removeClass('fixed');
+				 $('.nav').css('top', 100);
+				 $('.top-score-box').css('margin-top', '40px');
+				 $('.top-statplus-box').css('margin-top', '40px');
+				 $('.top-history-box').css('margin-top', '40px');
+				 $('.top-statdic-box').css('margin-top', '40px');
+			 }
+		});
+	});
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+

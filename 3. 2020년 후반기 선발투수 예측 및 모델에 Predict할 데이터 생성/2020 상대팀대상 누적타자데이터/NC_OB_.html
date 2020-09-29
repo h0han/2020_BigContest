@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<!-- saved from url=(0157)http://www.kbreport.com/teams/main?rows=20&order=TPCT&orderType=DESC&teamId=7&defense_no=&year_from=2020&year_to=2020&split01=opposite&split02_1=1&split02_2= -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>팀 타격메인기록 : KBReport</title>
+	
+
+
+
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="naver-site-verification" content="107314b00d1e56c756893c2dcad03e3eaf5587b2">
+	<link rel="stylesheet" type="text/css" href="./NC_OB_files/normalize.css">
+	
+		
+			<link rel="stylesheet" type="text/css" href="./NC_OB_files/kbr.style.css">
+		
+		
+	
+	<link href="./NC_OB_files/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./NC_OB_files/kbr.style.mobile.css">
+	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+	<iframe id="pxcelframe" src="./NC_OB_files/t_.html" style="display: none;"></iframe><script src="./NC_OB_files/osd.js.다운로드"></script><script src="./NC_OB_files/f(4).txt"></script><script src="./NC_OB_files/f(5).txt" id="google_shimpl"></script><script async="" src="./NC_OB_files/analytics.js.다운로드"></script><script type="text/javascript" id="async-buttons" src="./NC_OB_files/async-buttons.js.다운로드"></script><script type="text/javascript" src="./NC_OB_files/jquery.min.js.다운로드"></script>
+	<script type="text/javascript" src="./NC_OB_files/kbr.js.다운로드"></script>
+	<script type="text/javascript" src="./NC_OB_files/kbr.nav.top.js.다운로드"></script>
+	<link rel="shortcut icon" href="http://www.kbreport.com/web/image_new/kbrfavicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="http://www.kbreport.com/web/image_new/kbr_mobile_icon.png">
+	<link rel="stylesheet" type="text/css" href="./NC_OB_files/jquery.bxslider.css">
+	<script type="text/javascript" src="./NC_OB_files/jquery.bxslider.js.다운로드"></script>
+	<link rel="stylesheet" href="./NC_OB_files/responsive-tables.css">
+	<script src="./NC_OB_files/responsive-tables.js.다운로드"></script>
+	
+	
+	<meta name="description" lang="ko" content="한국 프로야구 타자의 팀 타격 메인기록입니다.">
+	<meta name="keywords" content="한국 프로야구|야구 기록|야구 통계|팀 타격 순위|팀 기록|팀 스탯|KBO|KBR|선수협공식기록사이트|KBReport">
+	<link rel="stylesheet" href="./NC_OB_files/jquery-ui.css">
+	<script src="./NC_OB_files/jquery-ui.js.다운로드"></script>
+	<script type="text/javascript" src="./NC_OB_files/jquery-migrate-1.1.1.min.js.다운로드"></script>
+	<script type="text/javascript" src="./NC_OB_files/jquery.ba-hashchange.min.js.다운로드"></script>
+	<script type="text/javascript">
+	$(function() {
+		  $(window).hashchange( function(){
+		    var hash = location.hash.replace( /^#\//, '' );
+		    if ( hash != "#" )	list(hash);
+		  });
+		  $(window).hashchange();
+		  
+		  $('.t-f-submit').bind('click', function(e) { 
+			  $("#order").val("oWAR");
+			  $("#orderType").val("DESC");
+			  $("#searchFrm").submit();
+			  e.preventDefault();
+			  });
+	});
+	
+	function changRow(row) {
+		$("#rows").val(row);
+		list("1");
+	}
+	
+	function list(page) {
+		if (!page.match(/^\d+$/ig)) page = 1;
+		$.ajax({
+			type: "POST",
+			data : $("#searchFrm").serialize()+"&page="+page,
+			url : '/teams/list/ajax',
+			success : function(result){
+				$("#resultListDiv").html(result);
+			},
+			error : function(result){
+				alert("리스트 조회를 실패하였습니다.");
+			}
+		});
+	}
+	
+	function f_order(order, type) {
+		$("#order").val(order);
+		if ("TPCT"==order) {
+			if ( "DESC"=="DESC" ) type="ASC";
+			else type="DESC";
+		}
+		$("#orderType").val(type);
+		$("#searchFrm").submit();
+	}
+	
+	</script>
+
+	<script type="text/javascript">var switchTo5x=true;</script>
+	<script type="text/javascript" src="./NC_OB_files/buttons.js.다운로드"></script>
+	<script type="text/javascript">stLight.options({publisher: "34871557-8845-433b-92f5-d33f9a596e3f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<link rel="stylesheet" type="text/css" href="./NC_OB_files/buttons-secure.css"><script type="text/javascript" src="./NC_OB_files/get_counts"></script><link rel="preload" href="./NC_OB_files/f(6).txt" as="script"><script type="text/javascript" src="./NC_OB_files/f(6).txt"></script><link rel="preload" href="./NC_OB_files/f(7).txt" as="script"><script type="text/javascript" src="./NC_OB_files/f(7).txt"></script></head>
+<body onload="" class="vsc-initialized">
+		<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-49491536-2', 'kbreport.com');
+	  ga('send', 'pageview');
+	
+	</script>
+	<div id="container" style="height: auto !important;">
+		
+
+
+
+
+
+
+<!--헤더 항목 시작 -->
+
+		<div class="header">
+			<div class="header-in">
+				<div class="header-left"></div>
+				<div class="header-logo">
+					<a href="http://www.kbreport.com/"><img class="logo-img" src="./NC_OB_files/kbr.png"></a>
+				</div>
+				<div class="header-right">
+					<input type="text" id="skeyword2" class="header-search-input" placeholder="기사검색">
+					<script>
+					$("#skeyword2").keypress(function( event ) {
+						  if ( event.which == 13 ) {
+							     event.preventDefault();
+							     if ($("#skeyword2").val() != "") {
+							    	 location.href='/statBuzz/main?option=tc&keyword='+$("#skeyword2").val();
+						     	}
+						  }
+					});
+					</script>
+					
+					<div class="clear"></div>
+					<div class="header-sns">
+						
+						<a href="https://twitter.com/KBReport" target="_blank"><div class="tt"><i class="fa fa-twitter"></i></div></a>
+						<a href="https://www.facebook.com/kbreport" target="_blank"><div class="fb"><i class="fa fa-facebook"></i></div></a>
+					</div>
+					<!--
+					<div class="header-member">
+						<a href="#"><div class="header-login"><i class="fa fa-unlock"></i>&nbsp;로그인</div></a>
+						<a href="#"><div class="header-join"><i class="fa fa-user"></i>&nbsp;회원가입</div></a>
+					</div>
+					<div class="clear"></div>
+					-->
+					<!-- 
+					<div class="header-search">
+						<form action="#" method="get">
+							<input type="text" name="search" class="header-search-input" placeholder="검색" />
+							<input type="submit" style="display:none;" />
+						</form>
+					</div>
+					 -->
+				</div>
+			</div>
+		</div><!-- .header end -->
+		<div class="nav fixed" style="top: 0px;">
+			<div class="nav-in">
+				<ul>
+					<a href="http://www.kbreport.com/"><li>홈</li></a>
+					<!-- <a href="/news/detail?seq=25"><li>KBR 소개</li></a> -->
+					<a href="http://www.kbreport.com/statBuzz/main"><li id="nav2">STAT BUZZ</li></a>
+					<a href="http://www.kbreport.com/leader/main"><li>선수기록</li></a>
+					<a href="http://www.kbreport.com/teams/main"><li>팀기록</li></a>
+					<a href="http://www.kbreport.com/player/list"><li>선수검색</li></a>
+					<a href="http://www.kbreport.com/history/main"><li>역대기록</li></a>
+					<a href="http://www.kbreport.com/statDic/main"><li id="nav4">STAT Dic</li></a>
+					<a href="http://www.kbreport.com/event/hitProbabilityPerGame"><li>투수 VS 타자</li></a>
+					<!-- 
+					<a href="score.html"><li id="nav1">경기결과</li></a>
+					<a href="/statBuzz/main"><li id="nav2">STAT BUZZ</li></a>
+					<a href="depth.html"><li>팀구성도</li></a>
+					<a href="trade.html"><li>선수이동내역</li></a>
+					<a href="/leader/main"><li>개인순위</li></a>
+					<a href="team.html"><li>팀순위</li></a>
+					<a href="awards.html"><li id="nav3">명예의전당</li></a>
+					<a href="/statDic/main"><li id="nav4">STAT Dic</li></a>
+					<a href="/event/hitProbabilityPerGame"><li>이벤트 STAT</li></a>
+					 -->
+				</ul>
+			</div>
+		</div><!-- .nav end -->
+		<div class="top-score-box" style="margin-top: -60px;">
+		<div class="top-score">
+				<div class="top-score-top">
+					<div class="tst-1">
+						<span class="tst-date">2014.6.24</span>
+						<span class="tst-day">화</span>
+					</div>
+					<div class="tst-2">
+						<div class="tst-vs-score">
+							<p class="tst-stadium">잠실</p>
+							<p class="tst-team-1"><span class="teamName">삼성</span></p>
+							<span class="tst-team-1-score">7</span>
+							<span class="tst-dash">-</span>
+							<span class="tst-team-2-score">6</span>
+							<p class="tst-team-2"><span class="teamName">롯데</span></p>
+							<p class="tst-special"></p>
+						</div>
+						<div class="tst-vs-score">
+							<p class="tst-stadium">잠실</p>
+							<p class="tst-team-1"><span class="teamName">삼성</span></p>
+							<span class="tst-team-1-score">7</span>
+							<span class="tst-dash">-</span>
+							<span class="tst-team-2-score">6</span>
+							<p class="tst-team-2"><span class="teamName">롯데</span></p>
+							<p class="tst-special"></p>
+						</div>
+						<div class="tst-vs-score">
+							<p class="tst-stadium">잠실</p>
+							<p class="tst-team-1"><span class="teamName">삼성</span></p>
+							<span class="tst-team-1-score">7</span>
+							<span class="tst-dash">-</span>
+							<span class="tst-team-2-score">6</span>
+							<p class="tst-team-2"><span class="teamName">롯데</span></p>
+							<p class="tst-special"></p>
+						</div>
+						<div class="tst-vs-score">
+							<p class="tst-stadium">잠실</p>
+							<p class="tst-team-1"><span class="teamName">삼성</span></p>
+							<span class="tst-team-1-score">7</span>
+							<span class="tst-dash">-</span>
+							<span class="tst-team-2-score">6</span>
+							<p class="tst-team-2"><span class="teamName">롯데</span></p>
+							<p class="tst-special"></p>
+						</div>
+					</div>
+					<div class="tst-3">
+						<a href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#"><span class="tst-b-btn">경기결과 전체 보기</span></a>
+					</div>
+				</div>
+				
+			</div><!-- .top-score end -->
+			</div><!-- .top-score-box end -->
+			<div class="top-statplus-box" style="margin-top: -60px;">
+			<div class="top-statplus">
+				<div class="top-statplus-top">
+					
+
+
+							
+		<div class="tspt-1">
+			<a class="tspt-a" href="http://www.kbreport.com/statBuzz/detail?seq=6862&amp;contentsType=a102"><span class="tspt-a-title"> 조상우 흔들리는 키움, 첫 우승 빨간불?</span></a>
+			<span class="tspt-a-by">By 케이비리포트</span>
+		</div>
+							
+		<div class="tspt-2">
+			<a class="tspt-a" href="http://www.kbreport.com/statBuzz/detail?seq=6861&amp;contentsType=a102"><span class="tspt-a-title"> ‘창단 첫 10위 위기’ SK, 최정이 살아나야</span></a>
+			<span class="tspt-a-by">By 케이비리포트</span>
+		</div>
+							
+		<div class="tspt-3">
+			<a class="tspt-a" href="http://www.kbreport.com/statBuzz/detail?seq=6860&amp;contentsType=a102"><span class="tspt-a-title">‘변화 외면’ 류중일 감독, LG 우승 꿈 멀어지나?</span></a>
+			<span class="tspt-a-by">By 케이비리포트</span>
+		</div>
+							
+		<div class="tspt-4">
+			<a class="tspt-a" href="http://www.kbreport.com/statBuzz/detail?seq=6858&amp;contentsType=a102"><span class="tspt-a-title"> ‘기량 정체’ 박찬호, 주전 유격수로 부적합?</span></a>
+			<span class="tspt-a-by">By 케이비리포트</span>
+		</div>
+		
+					
+				</div>
+				<div class="top-statplus-bottom">
+					<div class="tspb-right"><a href="http://www.kbreport.com/statBuzz/main">STAT BUZZ 전체 목록</a></div>
+				</div>
+			</div><!-- .top-statplus end -->
+			</div><!-- .top-statplus-box end -->
+			<div class="top-history-box" style="margin-top: -60px;">
+			<div class="top-history">
+				<div class="top-history-top">
+					<div class="tsht-1">
+						<span class="tsht-title">수상내역</span>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#"><span class="tsht-sub-title">역대 MVP</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#"><span class="tsht-sub-title">역대 신인왕</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#"><span class="tsht-sub-title">역대 골든글러브</span></a>
+					</div>
+					<div class="tsht-2">
+						<span class="tsht-title">누적기록</span>
+						<div class="tsht-s-i-box">
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#" title="다승"><span class="tsht-sub-inline-title">다승</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#" title="홀드"><span class="tsht-sub-inline-title">홀드</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#" title="세이브"><span class="tsht-sub-inline-title">세이브</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#" title="평균자책점"><span class="tsht-sub-inline-title">평균자책점</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#" title="탈삼진"><span class="tsht-sub-inline-title">탈삼진</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#" title="홈런"><span class="tsht-sub-inline-title">홈런</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#" title="타점"><span class="tsht-sub-inline-title">타점</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#" title="도루"><span class="tsht-sub-inline-title">도루</span></a>
+						</div>
+					</div>
+					<div class="tsht-3">
+						<span class="tsht-title">포스트시즌</span>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#"><span class="tsht-sub-title">준플레이 오프</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#"><span class="tsht-sub-title">플레이 오프</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#"><span class="tsht-sub-title">한국시리즈</span></a>
+					</div>
+					<div class="tsht-4">
+						<span class="tsht-title">올스타전</span>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#" title="2014"><span class="tsht-sub-inline-title">2014</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#" title="2013"><span class="tsht-sub-inline-title">2013</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#" title="2012"><span class="tsht-sub-inline-title">2012</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#"><span class="tsht-sub-title">연도별 베스트 11</span></a>
+					</div>
+					<div class="tsht-5">
+						<span class="tsht-title">국제경기</span>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#"><span class="tsht-sub-title">월드베이스볼클래식</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#"><span class="tsht-sub-title">올림픽</span></a>
+						<a class="tsht-a" href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#"><span class="tsht-sub-title">아시안게임</span></a>
+					</div>
+				</div>
+				<div class="top-history-bottom">
+					<div class="tshb-right"><a href="http://www.kbreport.com/teams/main?rows=20&amp;order=TPCT&amp;orderType=DESC&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=#">명예의전당 전체 목록</a></div>
+				</div>
+			</div><!-- .top-history end -->
+			</div><!-- .top-history-box end -->
+			<div class="top-statdic-box" style="margin-top: -60px;">
+			<div class="top-statdic">
+				<div class="top-statdic-top">
+					
+
+
+	<div class="tsdt-1">					
+		<span class="tsdt-title">타자스탯</span>
+		<div class="tsdt-s-t-box">
+		
+			<a class="tsdt-a" href="http://www.kbreport.com/statDic/detail?seq=6763&amp;contentsType=a301"><span class="tsdt-sub-title">[썩빡꾸의 세이버메트릭스] 타자의 클러치(clutch) 능력은 연속성을 가질까?</span></a>
+		
+			<a class="tsdt-a" href="http://www.kbreport.com/statDic/detail?seq=6564&amp;contentsType=a301"><span class="tsdt-sub-title"> 5툴 스코어(5TS, five-tool score)를 구하는 방법은?</span></a>
+		
+		</div>
+	</div>
+	<div class="tsdt-2">
+		<span class="tsdt-title">투수스탯</span>
+		<div class="tsdt-s-t-box">
+		
+			<a class="tsdt-a" href="http://www.kbreport.com/statDic/detail?seq=6421&amp;contentsType=a302"><span class="tsdt-sub-title">[썩빡꾸의 세이버메트릭스] 수비수의 도움을 배제할 경우 가장 뛰어난 투수는 누구?</span></a>
+		
+			<a class="tsdt-a" href="http://www.kbreport.com/statDic/detail?seq=6027&amp;contentsType=a302"><span class="tsdt-sub-title">[썩빡꾸의 세이버메트릭스] 사이영포인트로 살펴본 2019 KBO리그 최고 투수는?</span></a>
+		
+		</div>
+	</div>
+	<div class="tsdt-3">
+		<span class="tsdt-title">가공스탯</span>
+		<div class="tsdt-s-t-box">
+		
+			<a class="tsdt-a" href="http://www.kbreport.com/statDic/detail?seq=5790&amp;contentsType=a304"><span class="tsdt-sub-title">[썩빡꾸의 세이버메트릭스] 타자와 투수의 트리플 크라운 스코어(Triple Crown Score)</span></a>
+		
+			<a class="tsdt-a" href="http://www.kbreport.com/statDic/detail?seq=768&amp;contentsType=a304"><span class="tsdt-sub-title">강정호의 DRS와 UZR 수비 스탯</span></a>
+		
+		</div>
+	</div>
+	<div class="tsdt-4">
+		<span class="tsdt-title"></span>
+		<div class="tsdt-s-t-box">
+		<!-- 
+		
+			<a class="tsdt-a" href="/statDic/detail?seq=5790&contentsType=a304"><span class="tsdt-sub-title">[썩빡꾸의 세이버메트릭스] 타자와 투수의 트리플 크라운 스코어(Triple Crown Score)</span></a>
+		
+			<a class="tsdt-a" href="/statDic/detail?seq=768&contentsType=a304"><span class="tsdt-sub-title">강정호의 DRS와 UZR 수비 스탯</span></a>
+		
+		 -->
+		</div>
+	</div>
+
+				</div>
+				<div class="top-statdic-bottom">
+					<div class="tsdb-right"><a href="http://www.kbreport.com/statDic/main">STAT Dic 전체 목록</a></div>
+				</div>
+			</div><!-- .top-statdic end -->
+			</div><!-- .top-statdic-box end -->
+		<div class="res-header-box">
+			<div class="res-h-left">
+				<a href="http://www.kbreport.com/"><img class="r-kbrlogo" src="./NC_OB_files/kbr.png"></a>
+			</div>
+			<a class="r-nav-btn" href="javascript:;"><div class="res-h-right">
+				<i class="fa fa-bars"></i>
+			</div></a>
+		</div>
+		<div class="r-nav">
+			<!-- <a href="/news/detail?seq=25"><div class="nav-item">KBR 소개</div></a> -->
+			<!-- 
+			<a href="/statBuzz/main"><div class="nav-item">STAT BUZZ</div></a>
+			<a href="/leader/main"><div class="nav-item">선수순위</div></a>
+			<a href="/teams/main"><div class="nav-item">팀순위</div></a>
+			<a href="/player/list"><div class="nav-item">선수정보</div></a>
+			<a href="/statDic/main"><div class="nav-item">STAT Dic</div></a>
+			<a href="/event/hitProbabilityPerGame"><div class="nav-item">투수 VS 타자</div></a>
+			 -->
+			<a href="http://www.kbreport.com/statBuzz/main"><div class="nav-item">STAT BUZZ</div></a>
+			<a href="http://www.kbreport.com/leader/main"><div class="nav-item">선수기록</div></a>
+			<a href="http://www.kbreport.com/teams/main"><div class="nav-item">팀기록</div></a>
+			<a href="http://www.kbreport.com/player/list"><div class="nav-item">선수검색</div></a>
+			<a href="http://www.kbreport.com/history/main"><div class="nav-item">역대기록</div></a>
+			<a href="http://www.kbreport.com/statDic/main"><div class="nav-item">STAT Dic</div></a>
+			<a href="http://www.kbreport.com/event/hitProbabilityPerGame"><div class="nav-item">투수 VS 타자</div></a>
+			
+			<!-- 
+			<a href="score.html"><div class="nav-item">경기결과</div></a>
+			<a href="/statBuzz/main"><div class="nav-item">STAT PLUS</div></a>
+			<a href="depth.html"><div class="nav-item">뎁스차트</div></a>
+			<a href="trade.html"><div class="nav-item">트레이드 센터</div></a>
+			<a href="/leader/main"><div class="nav-item">개인순위</div></a>
+			<a href="team.html"><div class="nav-item">팀순위</div></a>
+			<a href="awards.html"><div class="nav-item">역대기록실</div></a>
+			<a href="/statDic/main"><div class="nav-item">STAT Dic</div></a>
+			<a href="/event/hitProbabilityPerGame"><div class="nav-item">이벤트 STAT</div></a>
+			 -->
+		</div><!-- r-nav end -->
+		
+<!--헤더 항목 끝 -->
+
+		
+<div class="main-content-box" style="height: auto !important; min-height: 0px !important;">
+			
+
+
+			<div class="kbr-ad1">
+				<script async="" src="./NC_OB_files/f(8).txt"></script>
+				<!-- KBR 상단 -->
+				<!-- test -->
+				<!--
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-9875837474705509"
+				     data-ad-slot="3508771089"
+				     data-ad-format="horizontal"></ins>
+				-->
+				<ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-9374396409442169" data-ad-slot="2001610731" data-ad-format="horizontal" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:1024px;background-color:transparent;"><ins id="aswift_0_anchor" style="display: block; border: none; height: 90px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 1024px; background-color: transparent; overflow: visible;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:1024px;height:90px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1024" height="90" frameborder="0" src="./NC_OB_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-google-query-id="CM6YqffwiewCFXzCTAIdi9UKnw" data-load-complete="true"></iframe></ins></ins></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+				
+			</div>
+			<div class="cs-box">
+				<div class="content-full">
+					<div class="leader-tab-box">
+						<a href="http://www.kbreport.com/leader/main"><div class="ltb-1">
+							<span class="ltb1-title">
+								선수기록
+							</span>
+						</div></a>
+						<a href="http://www.kbreport.com/teams/main"><div class="ltb-2 ltb-active">
+							<span class="ltb2-title">
+								팀기록
+							</span>
+						</div></a>
+						<!-- 
+						<a href="javascript:;"><div class="ltb-3">
+							<span class="ltb3-title">리그 기록</span>
+						</div></a>
+						 -->
+					</div>
+					<div class="leader-tab-box">
+						<a href="http://www.kbreport.com/teams/main"><div class="ltb-1 ltb-active">
+							<span class="ltb1-title">
+								타격 기록
+							</span>
+						</div></a>
+						<a href="http://www.kbreport.com/teams/pitcher/main"><div class="ltb-2">
+							<span class="ltb2-title">
+								투구 기록
+							</span>
+						</div></a>
+						<!-- 
+						<a href="javascript:;"><div class="ltb-3">
+							<span class="ltb3-title">수비 기록</span>
+						</div></a>
+						 -->
+					</div>
+
+					<div class="ltb-select-box">
+						<form name="searchFrm" id="searchFrm">
+						<input type="hidden" name="rows" id="rows" value="20">
+						<input type="hidden" name="order" id="order" value="TPCT">
+						<input type="hidden" name="orderType" id="orderType" value="DESC">
+						<div class="ltb-select-left">
+							<div class="ltb-sl-1">
+								<span class="ltb-team-title">팀</span>
+								<select class="ltb-team-select" name="teamId">
+									<option value="">팀-전체</option>
+									
+									<option value="1">팀-두산</option>
+									
+									<option value="2">팀-삼성</option>
+									
+									<option value="3">팀-KIA</option>
+									
+									<option value="4">팀-Hero</option>
+									
+									<option value="5">팀-LG</option>
+									
+									<option value="6">팀-SK</option>
+									
+									<option value="7" selected="">팀-NC</option>
+									
+									<option value="8">팀-한화</option>
+									
+									<option value="9">팀-롯데</option>
+									
+									<option value="15">팀-KT</option>
+									
+								</select>
+								<span class="ltb-position-title">포지션</span>
+								<select class="ltb-position-select" name="defense_no">
+									<option value="">포지션-전체</option>
+									<option value="2">포지션-포수</option>
+									<option value="3">포지션-1루수</option>
+									<option value="4">포지션-2루수</option>
+									<option value="5">포지션-3루수</option>
+									<option value="6">포지션-유격수</option>
+									<option value="7">포지션-좌익수</option>
+									<option value="8">포지션-중견수</option>
+									<option value="9">포지션-우익수</option>
+									<option value="10">포지션-지명타자</option>
+									<option value="1">포지션-투수</option>
+								</select>
+								<span class="ltb-season-title">시즌범위</span>
+								<select class="ltb-season-select" name="year_from">
+									
+									<option value="2020" selected="">시작 시즌-2020</option>
+									
+									<option value="2019">시작 시즌-2019</option>
+									
+									<option value="2018">시작 시즌-2018</option>
+									
+									<option value="2017">시작 시즌-2017</option>
+									
+									<option value="2016">시작 시즌-2016</option>
+									
+									<option value="2015">시작 시즌-2015</option>
+									
+									<option value="2014">시작 시즌-2014</option>
+									
+									<option value="2013">시작 시즌-2013</option>
+									
+									<option value="2012">시작 시즌-2012</option>
+									
+								</select>
+								<span class="ltb-season-to-title">TO</span>
+								<select class="ltb-season-select2" name="year_to">
+									
+									<option value="2020" selected="">종료 시즌-2020</option>
+									
+									<option value="2019">종료 시즌-2019</option>
+									
+									<option value="2018">종료 시즌-2018</option>
+									
+									<option value="2017">종료 시즌-2017</option>
+									
+									<option value="2016">종료 시즌-2016</option>
+									
+									<option value="2015">종료 시즌-2015</option>
+									
+									<option value="2014">종료 시즌-2014</option>
+									
+									<option value="2013">종료 시즌-2013</option>
+									
+									<option value="2012">종료 시즌-2012</option>
+									
+								</select>
+							</div>
+							<div class="ltb-sl-2">
+								<span class="ltb-index1-title">분류1</span>
+								<select class="ltb-index1-select" name="split01" id="split01">
+									<option value="">분류-선택안함</option>
+									<option value="month">월별</option>
+									<option value="day">날짜별</option>
+									<option value="week">요일별</option>
+									<option value="inning">이닝별</option>
+									<option value="outcount">아웃카운트별</option>
+									<!--  
+									<option value="ballcount" >볼카운트별</option>
+									-->
+									<option value="hitside">타격위치별</option>
+									<option value="homeaway">홈원정별</option>
+									<option value="stadium">구장별</option>
+									<option value="opposite" selected="">상대팀별</option>
+									<option value="base">주자상황별</option>
+									<option value="winlose">경기결과(승패)별</option>
+									<option value="pitchside">투수유형별</option>
+									<!-- 
+									<option value="month_3_4"	>분류1-3~4월</option>
+									<option value="month_5"		>분류1-5월</option>
+									<option value="month_6"		>분류1-6월</option>
+									<option value="month_7"		>분류1-7월</option>
+									<option value="month_8"		>분류1-8월</option>
+									<option value="month_9"		>분류1-9월</option>
+									<option value="month_10_11"	>분류1-10~11월</option>
+									<option value="byWeekday"	>분류1-요일별</option>
+									<option value="byInning"	>분류1-이닝별</option>
+									<option value="byOutcount"	>분류1-아웃카운트별</option>
+									<option value="hitR"		>분류1-좌타</option>
+									<option value="hitL"		>분류1-우타</option>
+									<option value="home"		>분류1-홈</option>
+									<option value="away"		>분류1-원정</option>
+									<option value="byStadium"	>분류1-구장별</option>
+									<option value="byOpposite"	>분류1-상대팀별</option>
+									<option value="onBase"		>분류1-주자있음</option>
+									<option value="emptyBase"	>분류1-주자없음</option>
+									<option value="onScoring"	>분류1-득점권</option>
+									<option value="fullBase"	>분류1-만루</option>
+									<option value="win"			>분류1-승리시</option>
+									<option value="lose"		>분류1-패배시</option>
+									<option value="pitchL"		>분류1-좌투수</option>
+									<option value="pitchR"		>분류1-우투수</option>
+									-->
+								</select>
+								<script>
+									$("select[name='split01']").on("change",function()
+									{
+										$(".split02-selection-panel").hide();
+										
+										$("#split02_"+$(this).val()).show();
+										
+									});
+									function clearText( objs )
+									{
+										$.each( objs, function( key, value ) {
+										  	$("#"+value).val("");
+										});
+									}
+									
+									$(document).ready(function()
+									{
+										if( $("#split01").val() != "" )
+										{
+											if( $("#split02_1_"+$("#split01").val()) )
+											{
+												$("#split02_1_"+$("#split01").val()).val("1");
+											}
+											
+											if( $("#split02_2_"+$("#split01").val()) )
+											{
+												$("#split02_2_"+$("#split01").val()).val("");
+											}
+											
+											$(".split02-selection-panel").hide();
+											
+											$("#split02_"+$("#split01").val()).show();
+										}
+									});
+								</script>
+								<input type="hidden" name="split02_1" id="split02_1" value="1">
+								<input type="hidden" name="split02_2" id="split02_2" value="">
+								
+									<span id="split02_month" class="split02-selection-panel" style="display:none">
+									<span class="ltb-index2-title">분류2</span>
+									
+										<select class="ltb-index2-select" id="split02_1_month">
+											<option value="">분류2-시작 월</option>
+											<option value="">전체</option>
+											<option value="3">3월</option>
+											<option value="4">4월</option>
+											<option value="5">5월</option>
+											<option value="6">6월</option>
+											<option value="7">7월</option>
+											<option value="8">8월</option>
+											<option value="9">9월</option>
+											<option value="10">10월</option>
+											<option value="11">11월</option>
+										</select>
+										~
+										<select class="ltb-index2-select" id="split02_2_month">
+											<option value="">분류2-끝 월</option>
+											<option value="">전체</option>
+											<option value="3">3월</option>
+											<option value="4">4월</option>
+											<option value="5">5월</option>
+											<option value="6">6월</option>
+											<option value="7">7월</option>
+											<option value="8">8월</option>
+											<option value="9">9월</option>
+											<option value="10">10월</option>
+											<option value="11">11월</option>
+										</select>
+									</span>
+									<span id="split02_ballcount" class="split02-selection-panel" style="display:none">
+									<span class="ltb-index2-title">분류2</span>
+								
+										<select class="ltb-index2-select" id="split02_1_ballcount">
+											<option value="">분류2-볼</option>
+											<option value="">전체</option>
+											<option value="0">0B</option>
+											<option value="1">1B</option>
+											<option value="2">2B</option>
+											<option value="3">3B</option>
+											<option value="4">1B 이상</option>
+											<option value="5">2B 이상</option>
+											<option value="6">1B 이하</option>
+											<option value="7">2B 이하</option>
+										</select>
+										~
+										<select class="ltb-index2-select" id="split02_2_ballcount">
+											<option value="">분류2-스트라이크</option>
+											<option value="">전체</option>
+											<option value="0">0S</option>
+											<option value="1">1S</option>
+											<option value="2">2S</option>
+											<option value="3">1S 이상</option>
+											<option value="4">1S 이하</option>
+										</select>
+									</span>
+									<span id="split02_day" class="split02-selection-panel" style="display:none">
+										<input type="text" id="split02_1_day" value="" placeholder="시작 날짜" class="hasDatepicker">~
+										<input type="text" id="split02_2_day" value="" placeholder="끝 날짜" class="hasDatepicker">
+										<a href="javascript:clearText([&#39;split02_1_day&#39;,&#39;split02_2_day&#39;])"><i class="fa fa-refresh"></i></a>
+									</span>
+										<script>
+											$( "#split02_1_day" ).datepicker({
+										      defaultDate: "today",
+										      changeMonth: true,
+										      numberOfMonths:1,
+										      dateFormat:"yy-mm-dd",
+										      closeText: '닫기',
+										      prevText: '이전',
+										      nextText: '다음',
+										      currentText: '오늘',
+										      monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+										      monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'],
+										      dayNames: ['일','월','화','수','목','금','토'],
+										      dayNamesShort: ['일','월','화','수','목','금','토'],
+										      dayNamesMin: ['일','월','화','수','목','금','토'],
+										      weekHeader: 'Wk',
+										      onClose: function( selectedDate ) {
+										        $( "#split02_2_day" ).datepicker( "option", "minDate", selectedDate );
+										      }
+										    });
+										    $( "#split02_2_day" ).datepicker({
+										      defaultDate: "today",
+										      changeMonth: true,
+										      numberOfMonths:1,
+										      dateFormat:"yy-mm-dd",
+										      closeText: '닫기',
+										      prevText: '이전',
+										      nextText: '다음',
+										      currentText: '오늘',
+										      monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+										      monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'],
+										      dayNames: ['일','월','화','수','목','금','토'],
+										      dayNamesShort: ['일','월','화','수','목','금','토'],
+										      dayNamesMin: ['일','월','화','수','목','금','토'],
+										      weekHeader: 'Wk',
+										      onClose: function( selectedDate ) {
+										        $( "#split02_1_day" ).datepicker( "option", "maxDate", selectedDate );
+										      }
+										    });
+										    $.datepicker.setDefaults( $.datepicker.regional[ "ko" ] );
+										</script>
+									<span id="split02_week" class="split02-selection-panel" style="display:none">
+										<select class="ltb-index2-select" id="split02_1_week">
+											<option value="">분류2-요일선택</option>
+											<option value="">전체</option>
+											<option value="0">월</option>
+											<option value="1">화</option>
+											<option value="2">수</option>
+											<option value="3">목</option>
+											<option value="4">금</option>
+											<option value="5">토</option>
+											<option value="6">일</option>
+										</select>
+									</span>
+									<span id="split02_inning" class="split02-selection-panel" style="display:none">
+										<select class="ltb-index2-select" id="split02_1_inning">
+											<option value="">분류2-시작이닝선택</option>
+											<option value="">전체</option>
+											<option value="01">1</option>
+											<option value="02">2</option>
+											<option value="03">3</option>
+											<option value="04">4</option>
+											<option value="05">5</option>
+											<option value="06">6</option>
+											<option value="07">7</option>
+											<option value="08">8</option>
+											<option value="09">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+										~
+										<select class="ltb-index2-select" id="split02_2_inning">
+											<option value="">분류2-끝이닝선택</option>
+											<option value="">전체</option>
+											<option value="01">1</option>
+											<option value="02">2</option>
+											<option value="03">3</option>
+											<option value="04">4</option>
+											<option value="05">5</option>
+											<option value="06">6</option>
+											<option value="07">7</option>
+											<option value="08">8</option>
+											<option value="09">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+									</span>
+										
+									<span id="split02_outcount" class="split02-selection-panel" style="display:none">
+										<select class="ltb-index2-select" id="split02_1_outcount">
+											<option value="">분류2-시작 아웃카운트</option>
+											<option value="">전체</option>
+											<option value="0">무사</option>
+											<option value="1">1사</option>
+											<option value="2">2사</option>
+										</select>
+										~
+										<select class="ltb-index2-select" id="split02_2_outcount">
+											<option value="">분류2-끝 아웃카운트</option>
+											<option value="">전체</option>
+											<option value="0">무사</option>
+											<option value="1">1사</option>
+											<option value="2">2사</option>
+										</select>
+									</span>
+									
+									<span id="split02_hitside" class="split02-selection-panel" style="display:none">
+										<select class="ltb-index2-select" id="split02_1_hitside">
+											<option value="">분류2-타격위치 선택</option>
+											<option value="">전체</option>
+											<option value="hitR">우타</option>
+											<option value="hitL">좌타</option>
+										</select>
+									</span>
+									
+									<span id="split02_homeaway" class="split02-selection-panel" style="display:none">
+										<select class="ltb-index2-select" id="split02_1_homeaway">
+											<option value="">분류2-홈/원정 선택</option>
+											<option value="">전체</option>
+											<option value="home">홈</option>
+											<option value="away">원정</option>
+										</select>
+									</span>
+									
+									<span id="split02_base" class="split02-selection-panel" style="display:none">
+										<select class="ltb-index2-select" id="split02_1_base">
+											<option value="">분류2-주자상황 선택</option>
+											<option value="">전체</option>
+											<option value="onBase">주자있음</option>
+											<option value="emptyBase">주자없음</option>
+											<option value="onScoring">득점권</option>
+											<option value="fullBase">만루</option>
+											<option value="base1">주자1루</option>
+											<option value="base12">주자12루</option>
+											<option value="base13">주자13루</option>
+											<option value="base2">주자2루</option>
+											<option value="base23">주자23루</option>
+											<option value="base3">주자3루</option>
+										</select>
+									</span>
+									
+									<span id="split02_winlose" class="split02-selection-panel" style="display:none">
+										<select class="ltb-index2-select" id="split02_1_winlose">
+											<option value="">분류2-경기결과(승패) 선택</option>
+											<option value="">전체</option>
+											<option value="win">승</option>
+											<option value="draw">무</option>
+											<option value="lose">패</option>
+										</select>
+									</span>
+									
+									<span id="split02_pitchside" class="split02-selection-panel" style="display:none">
+										<select class="ltb-index2-select" id="split02_1_pitchside">
+											<option value="">분류2-투수유형 선택</option>
+											<option value="">전체</option>
+											<option value="pitchL">좌투</option>
+											<option value="pitchR">우투</option>
+											<option value="pitchU">사이드</option>
+										</select>
+									</span>
+									
+									
+									
+									<span id="split02_opposite" class="split02-selection-panel" style="">
+										<select class="ltb-index2-select" id="split02_1_opposite">
+											<option value="">분류2-상대팀 선택</option>
+											<option value="">전체</option>
+											
+												<option value="1">두산</option>
+											
+												<option value="2">삼성</option>
+											
+												<option value="3">KIA</option>
+											
+												<option value="4">Hero</option>
+											
+												<option value="5">LG</option>
+											
+												<option value="6">SK</option>
+											
+												<option value="7">NC</option>
+											
+												<option value="8">한화</option>
+											
+												<option value="9">롯데</option>
+											
+												<option value="15">KT</option>
+											
+										</select>
+									</span>
+									
+									<span id="split02_stadium" class="split02-selection-panel" style="display:none">
+										<select class="ltb-index2-select" id="split02_1_stadium">
+											<option value="">분류2-구장 선택</option>
+											<option value="">전체</option>
+											
+												<option value="1">
+												목동
+												</option>
+											
+												<option value="2">
+												잠실
+												</option>
+											
+												<option value="3">
+												문학
+												</option>
+											
+												<option value="4">
+												대전
+												</option>
+											
+												<option value="5">
+												대구
+												</option>
+											
+												<option value="6">
+												광주
+												</option>
+											
+												<option value="7">
+												사직
+												</option>
+											
+												<option value="8">
+												청주
+												</option>
+											
+												<option value="9">
+												군산
+												</option>
+											
+												<option value="10">
+												마산
+												</option>
+											
+												<option value="13">
+												포항
+												</option>
+											
+												<option value="15">
+												울산
+												</option>
+											
+												<option value="16">
+												무등
+												</option>
+											
+												<option value="17">
+												수원
+												</option>
+											
+												<option value="18">
+												대구라팍
+												</option>
+											
+												<option value="19">
+												고척돔
+												</option>
+											
+												<option value="20">
+												창원
+												</option>
+											
+										</select>
+										
+									</span>
+							</div>
+						</div>
+						<div class="ltb-select-right">
+							<button class="ltb-button" type="button" onclick="goSubmit()">결과</button>
+							<script>
+								function goSubmit()
+								{
+									var v1 = $("#split02_1_"+$("#split01").val()).val();
+									var v2 = $("#split02_2_"+$("#split01").val()).val();
+									
+									$("#split02_1").val( v1 );
+									$("#split02_2").val( v2 );
+									
+									$("#searchFrm").submit();
+								}
+							</script> 
+						</div>
+						</form>
+					</div>
+					<div class="leader-tab-box">
+						<a href="http://www.kbreport.com/teams/main?teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=">
+						<div class="ltb-5-1 ltb-active">
+							<span class="ltb1-title">
+								메인 기록
+							</span>
+						</div></a>
+						<a href="http://www.kbreport.com/teams/standard?teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=">
+						<div class="ltb-5-2">
+							<span class="ltb2-title">
+								기본 기록
+							</span>
+						</div></a>
+						<a href="http://www.kbreport.com/teams/advanced?teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02_1=1&amp;split02_2=">
+						<div class="ltb-5-3">
+							<span class="ltb3-title">
+								세부 기록
+							</span>
+						</div></a>
+						<!-- 
+						<a href="javascript:;"><div class="ltb-5-4">
+							<span class="ltb3-title">타구 분석</span>
+						</div></a>
+						<a href="javascript:;"><div class="ltb-5-5">
+							<span class="ltb3-title">타석 분석</span>
+						</div></a>
+						 -->
+					</div>
+		
+					 		<div class="share_desktop" style="height:22px">
+			<center>
+				<span class="st_facebook_hcount" displaytext="Facebook" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span><span class="stMainServices st-facebook-counter" style="background-image: url(&quot;https://ws.sharethis.com/images/2017/facebook_counter.png&quot;);">&nbsp;</span><span class="stArrow"><span class="stButton_gradient stHBubble" style="display: inline-block;"><span class="stBubble_hcount">349</span></span></span></span></span></span>
+				<span class="st_twitter_hcount" displaytext="Tweet" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span><span class="stMainServices st-twitter-counter" style="background-image: url(&quot;https://ws.sharethis.com/images/2017/twitter_counter.png&quot;);">&nbsp;</span><span class="stArrow"><span class="stButton_gradient stHBubble" style="display: inline-block;"><span class="stBubble_hcount">112</span></span></span></span></span></span>
+				<span class="st_googleplus_hcount" displaytext="Google +" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span><span class="stButton_gradient"><span class="chicklets googleplus">Google +</span></span><span class="stArrow"><span class="stButton_gradient stHBubble" style="display: inline-block;"><span class="stBubble_hcount">58</span></span></span></span></span></span>
+				<span class="st_email_hcount" displaytext="Email" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span><span class="stMainServices st-email-counter" style="background-image: url(&quot;https://ws.sharethis.com/images/2017/email_counter.png&quot;);">&nbsp;</span><span class="stArrow"><span class="stButton_gradient stHBubble" style="display: inline-block;"><span class="stBubble_hcount">27</span></span></span></span></span></span>
+			</center>
+		</div>
+		<div class="share_mobile" style="height:30px">
+			<center>
+				<span class="st_facebook_large" displaytext="Facebook" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;https://ws.sharethis.com/images/2017/facebook_32.png&quot;);"></span></span></span>
+				<span class="st_twitter_large" displaytext="Tweet" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;https://ws.sharethis.com/images/2017/twitter_32.png&quot;);"></span></span></span>
+				<span class="st_googleplus_large" displaytext="Google +" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;https://ws.sharethis.com/images/2017/googleplus_32.png&quot;);"></span></span></span>
+				<span class="st_email_large" displaytext="Email" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;https://ws.sharethis.com/images/2017/email_32.png&quot;);"></span></span></span>
+			</center>
+		</div>
+					
+					<div class="ltb-table-box" id="resultListDiv">
+
+
+
+<script type="text/javascript" src="./NC_OB_files/paging.js.다운로드"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		paging.action({
+			id : "paging"
+			, totalCount : setNumber('1')
+			, page : setNumber('1')
+			, rows : setNumber('20')
+			, allView : true
+			, pageGroup : 5
+			, link : "#/{{page}}"
+		});
+		switched=false;
+		updateTables();
+
+	});
+</script>
+						<div class="page-row-box">
+							<span class="page-row">Page Row</span>
+							<select class="page-row-num" onchange="changRow(this.options[selectedIndex].value)">
+								<option value="5">5</option>
+								<option value="10">10</option>
+								<option value="15">15</option>
+								<option value="20" selected="">20</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+							</select>
+						</div>
+						<table class="ltb-table responsive">
+							<tbody><tr>
+								<th width="20px">#</th>
+								
+									<th width="60px" onclick="f_order(&#39;teamName&#39;,&#39;ASC&#39;)" class="line">팀명</th>
+								
+									<th onclick="f_order(&#39;op_teamName&#39;,&#39;ASC&#39;)" class="data">상대</th>
+								
+									<th onclick="f_order(&#39;G&#39;,&#39;DESC&#39;)" class="data">경기</th>
+								
+									<th onclick="f_order(&#39;TW&#39;,&#39;DESC&#39;)" class="data">승</th>
+								
+									<th onclick="f_order(&#39;TD&#39;,&#39;DESC&#39;)" class="data">무</th>
+								
+									<th onclick="f_order(&#39;TL&#39;,&#39;DESC&#39;)" class="data line">패</th>
+								
+									<th onclick="f_order(&#39;TPCT&#39;,&#39;DESC&#39;)" class="order data">승률</th>
+								
+									<th onclick="f_order(&#39;TPPCT&#39;,&#39;DESC&#39;)" class="data line">기대승률</th>
+								
+									<th onclick="f_order(&#39;TRG&#39;,&#39;DESC&#39;)" class="data">R/G</th>
+								
+									<th onclick="f_order(&#39;R&#39;,&#39;DESC&#39;)" class="data">득점</th>
+								
+									<th onclick="f_order(&#39;HR&#39;,&#39;DESC&#39;)" class="data">홈런</th>
+								
+									<th onclick="f_order(&#39;SB&#39;,&#39;DESC&#39;)" class="data line">도루</th>
+								
+									<th onclick="f_order(&#39;BBP&#39;,&#39;DESC&#39;)" class="data">볼넷%</th>
+								
+									<th onclick="f_order(&#39;KP&#39;,&#39;DESC&#39;)" class="data">삼진%</th>
+								
+									<th onclick="f_order(&#39;BABIP&#39;,&#39;DESC&#39;)" class="data line">BABIP</th>
+								
+									<th onclick="f_order(&#39;AVG&#39;,&#39;DESC&#39;)" class="data">타율</th>
+								
+									<th onclick="f_order(&#39;OBP&#39;,&#39;DESC&#39;)" class="data">출루율</th>
+								
+									<th onclick="f_order(&#39;SLG&#39;,&#39;DESC&#39;)" class="data">장타율</th>
+								
+									<th onclick="f_order(&#39;OPS2&#39;,&#39;DESC&#39;)" class="data">OPS</th>
+								
+									<th onclick="f_order(&#39;wOBA&#39;,&#39;DESC&#39;)" class="data line">wOBA</th>
+								
+									<th onclick="f_order(&#39;oWAR&#39;,&#39;DESC&#39;)" class="data">WAR</th>
+								
+							</tr>
+							
+							
+							<tr>
+								<td>1</td>
+								
+								
+									
+										
+											<td class="line"><a href="http://www.kbreport.com/leader/main?rows=20&amp;teamId=7&amp;defense_no=&amp;year_from=2020&amp;year_to=2020&amp;split01=opposite&amp;split02=&amp;tpa_count=0" class="player-link">NC</a></td>
+										
+										
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">두산</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">16</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">9</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">0</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data line">7</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data order">0.563</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data line">-</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">6.19</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">99</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">20</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data line">12</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">7.8</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">18.1</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data line">0.337</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">0.293</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">0.359</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">0.463</td>
+										
+									
+								
+									
+										
+										
+											<td style="text-align:right;padding-right:2px">
+											
+											
+												
+												
+													
+													0.822
+												
+											
+											</td>
+										
+										
+									
+								
+									
+										
+										
+										
+											<td class="data line">0.365</td>
+										
+									
+								
+									
+										
+										
+										
+											<td class="data">-</td>
+										
+									
+								
+							
+							
+							
+							</tr><tr>
+								<td></td>
+								
+								
+									
+										
+											<td>
+												전체
+											</td>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">두산</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">16</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">9</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">0</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data line">7</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data order">0.563</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td style="text-align:right;padding-right:2px">
+											-
+											</td>
+										
+										
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">6.19</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">99</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">20</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data line">12</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">7.8</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">18.1</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data line">0.337</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">0.293</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">0.359</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data">0.463</td>
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td style="text-align:right;padding-right:2px">
+											
+											
+												
+												
+													
+													0.822
+												
+											
+											</td>
+										
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<td class="data line">0.365</td>
+										
+									
+								
+									
+										
+										
+											<td style="text-align:right;padding-right:2px">
+											
+											
+												-
+												
+											
+											
+											</td>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+									
+								
+								 
+							
+						</tr></tbody></table>
+						<div class="paging-box">
+							<!-- 
+							<div class="paging-num-box" id="paging" >
+								<a href="#none" class="paging-num first_page"><i class="fa fa-angle-double-left"></i></a>
+								<a href="#none" class="paging-num prev_page"><i class="fa fa-angle-left"></i></a>
+								<a href="#none" class="paging-num paging-active now_index" page="{{num}}"><strong>{{num}}</strong></a>
+								<a href="#none" title="{{num}}page" class="paging-num normal_index" page="{{num}}">{{num}}</a>
+								<a href="#none" class="paging-num next_page"><i class="fa fa-angle-right"></i></a>
+								<a href="#none" class="paging-num last_page"><i class="fa fa-angle-double-right"></i></a>
+							</div> 
+							-->
+							<div class="leader-update-time-box">
+								<span class="lu-title">
+									기준일자
+								</span>
+								<span class="lu-time">2020-09-27 23:16</span>
+							</div>
+						</div>
+						</div><!-- .ltb-table-box-->
+				</div><!-- .content-full -->
+			</div>
+		</div>
+
+		<div class="clear"></div>
+		
+
+
+		<div class="goTop" style="cursor: pointer;"><i class="fa fa-chevron-up"></i></div>
+		<div class="footer">
+			<div class="footer-in">
+				<div class="footer-kbr-logo">
+					
+				</div>
+				
+				<div class="footer-sec-1">
+					<h4><a href="http://www.kbreport.com/news/detail?seq=25" class="black">KBR 소개</a></h4>
+				</div>
+				<div class="footer-sec-2">
+					<h4><a href="mailto:kbr@kbreport.com" class="black">CONTACT</a></h4>
+				</div>
+				<div class="footer-sec-3">
+					<h4><a href="http://www.kbreport.com/statBuzz/rss" class="black" target="_blank">RSS</a></h4>
+				</div>
+				<div class="footer-sec-4">
+					<!-- <h4>한국프로야구선수협회</h4> -->
+					<h4><a href="http://kpbpa.co.kr/wordpress/" target="_blank"><img src="./NC_OB_files/kpbpa.png" width="200px" style="margin-top:5px"></a></h4>
+				</div>
+			</div>
+		</div><!-- .footer end -->
+		<div class="footer-bottom">
+			<p class="ft-copy">
+			<a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img src="./NC_OB_files/88x31.png"></a><br>
+			야구기록실 KBReport.com(케이비리포트)는 프로야구팬들을 위해 운영되는 사이트입니다.<br> 
+			본 사이트의 기록을 개인적 또는 보도를 목적으로 사용하는 경우에는 반드시 출처를 '야구기록실 케이비리포트, 또는 KBReport.com(케이비리포트)'로 표기해야 합니다.<br>
+			상업적인 목적으로 이용을 원하는 경우에는 [케이비리포트] 운영진과 사전 협의가 필요합니다. (To: kbr@kbreport.com)<br>
+			KBReport.com(케이비리포트)에서 제공하는 한국 프로야구 기록 및 통계 데이터는 집계 방식의 차이로 KBO 공식기록과 차이가 발생할 수 있습니다.<br>
+			이점을 감안하고 이용하시길 바라며 이에 따라 발생할 수 있는 모든 문제에 대해 KBR(케이비알)은 법적 책임을 지지 않습니다.<br>
+			<br>
+			케이비리포트(KBReport.com)의 기록/컨텐츠를 무단 사용, 복사, 배포시 저작권법에 저촉됩니다.
+
+			<!-- 명칭: 스포츠미디어 케이비리포트 / 등록번호: 서울 아 03657 / 등록일자: 2015년 03월 26일 / 제호:  프로야구기록실 kbreport / 발행인: 김정보 / 편집인: 김정보<br/>
+			발행소: 서울시 강동구 구천면로 47길 69 / Tel: 070-7648-7948 / 발행일자 : 2014년 4월 8일 / 청소년보호책임자 : 김정학<br/>
+			케이비리포트(KBReport.com)의 기사/칼럼/카툰 등 컨텐츠의 무단 사용, 복사, 배포시 저작권법에 저촉됩니다.-->
+			</p>
+			<p class="ft-copy">ⓒ 2014~ 현재, KBR(케이비알) All Rights Reserved.<br>
+			</p>
+			 
+		</div>
+		<!-- 
+		<div class="footer">
+			<div class="copyright_ccl">
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" 
+			src="http://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
+			</div>
+			<p class="copyright_message">
+			본 콘텐츠의 저작권은 KBR에 있으며, 상업적인 목적으로 무단 사용할 경우 법적인 책임을 질 수 있습니다.<br />
+			개인적인 이용이나 보도 목적으로 사용할 경우에 는 반드시 출처를 KBReport.com으로 표기해야 합니다.<br />
+			<!-- KBR이 제공하는 경기 데이터는 사정에 의해 잘못 표시될 수 있습니다.<br /> --
+			<!-- KBR이 제공하는 경기 데이터는 사정에 의해 잘못 표시될 수 있으며,KBR은 그에 따른 스포츠 데이터의 정확성 및 신뢰성을 담보하지 않습니다.<br /> --
+			KBR에서 제공하는 한국 프로야구 통계 데이터는 사정에 따라 지연되거나  잘못 표시될  수 있습니다. 
+			이에 따라 발생할 수 있는 모든 문제에 대해  KBR은  법적책임을 지지 않습니다.<br />
+			<!-- 오류, 건의사항 궁금하신 점은 <a href="mailto:admin@kbreport.com">admin@kbreport.com</a>으로 보내주시기 바랍니다.--
+			</p>
+			<div class="clear"></div>
+			<p class="copyright">&copy; 2014. KBR all rights reserved.
+			</p>
+			<div class="f-menu1">
+				<p class="research">건의 및 문의사항</p>
+				<ul>
+					<li><a href="mailto:admin@kbreport.com">admin@kbreport.com</a></li>
+				</ul>
+			</div>
+			<div class="f-menu2">
+				<p class="company">회사 소개</p>
+				<ul>
+					<li><a href="/common/static/companyInfo">오픈 안내</a></li>
+					<li><a href="/common/static/update">향후 업데이트 예고</a></li>
+				</ul>
+			</div>
+			<div class="f-banner">
+				<a href="http://kpbpa.co.kr/wordpress/" target="_blank"><img src="/web/image/kpbpa.png" alt="KBREPORT BANNER" width="200px" border=0/></a>
+			</div> 
+			<div class="clear"></div>
+		</div>
+		 -->
+		 
+		 
+	</div><iframe src="./NC_OB_files/portal-v2.html" id="st_gdpr_iframe" title="GDPR Consent Management" style="width: 0px; height: 0px; position: absolute; left: -5000px;"></iframe><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><!-- #container end -->
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./NC_OB_files/ads(1).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-load-complete="true"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_9728900714323" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./NC_OB_files/saved_resource(1).html"></iframe><div id="stcpDiv" style="position: absolute; top: -1999px; left: -1988px;">ShareThis Copy and Paste</div><div id="stwrapper" class="stwrapper stwrapper5x stwrapper5x" style="display: none;"><iframe allowtransparency="true" id="stLframe" class="stLframe" name="stLframe" frameborder="0" scrolling="no" src="./NC_OB_files/index.html"></iframe></div><div id="stOverlay" onclick="javascript:stWidget.closeWidget();"></div></body><iframe id="google_esf" name="google_esf" src="./NC_OB_files/zrt_lookup.html" data-ad-client="ca-pub-9374396409442169" style="display: none;"></iframe></html>

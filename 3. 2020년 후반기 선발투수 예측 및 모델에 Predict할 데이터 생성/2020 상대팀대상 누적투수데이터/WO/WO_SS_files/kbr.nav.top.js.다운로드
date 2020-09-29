@@ -1,0 +1,53 @@
+$(function() {
+$("#nav1").hover(
+function() { $(".top-score-box").css('display', 'block'); },
+function() { $(".top-score-box").hide()});
+$(".top-score").hover(
+function() { $(".top-score-box").css('display', 'block'); },
+function() { $(".top-score-box").hide()});
+});
+
+$(function() {
+$("#nav2").hover(
+function() { $(".top-statplus-box").css('display', 'block'); },
+function() { $(".top-statplus-box").hide()});
+$(".top-statplus").hover(
+function() { $(".top-statplus-box").css('display', 'block'); },
+function() { $(".top-statplus-box").hide()});
+});
+
+$(function() {
+$("#nav3").hover(
+function() { $(".top-history-box").css('display', 'block'); },
+function() { $(".top-history-box").hide()});
+$(".top-history").hover(
+function() { $(".top-history-box").css('display', 'block'); },
+function() { $(".top-history-box").hide()});
+});
+
+$(function() {
+$("#nav4").hover(
+function() { $(".top-statdic-box").css('display', 'block'); },
+function() { $(".top-statdic-box").hide()});
+$(".top-statdic").hover(
+function() { $(".top-statdic-box").css('display', 'block'); },
+function() { $(".top-statdic-box").hide()});
+});
+
+$(document).ready(function() {
+	$(".r-nav-btn").click(function() {
+	$(".r-nav").slideToggle('fast');
+	});
+});
+
+		
+$(document).ready(function()
+{
+    var speed = 800; // 스크롤속도
+    $(".goTop").css("cursor", "pointer").click(function()
+    {
+        $('body, html').animate({scrollTop:0}, speed);
+    });
+
+});
+

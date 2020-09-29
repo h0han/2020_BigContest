@@ -1,0 +1,238 @@
+function setNumber(num) {
+	return (/\d+/g.test(num)) ? parseInt(num, 10) : 0;
+}
+
+/**
+	@class
+*/
+function clsPaging () {
+	this.link = {};
+	this.def = {};
+	this.isLoaded = {};
+	this.params = null;
+
+	/**
+		페이징
+		@param {Object} obj 페이징에 필요한 객체
+		@example
+		paging.action({
+			id : "paging"
+			, link : "?page={page}"
+			, totalCount : 150
+			, page : 1
+			, rows : 10
+		});
+	*/
+	this.action = function(obj) {
+		if (!obj) {
+			alert("필수 인자가 필요합니다.");
+			return;
+		}
+		if (!obj.id) {
+			alert("[id:페이징 영역 정의]는 필수 입니다.");
+			return;
+		}
+		if (!obj.link) {
+			alert("[link:링크 주소]는 필수 입니다.");
+			return;
+		}
+		if (typeof(obj.totalCount) == 'undefined') {
+			alert("[totalCount:전체 게시물 수]는 필수 입니다.");
+			return;
+		}
+		if (!obj.page) obj.page = 1;
+		if (!obj.rows) obj.rows = 10;
+		if (!obj.pageGroup) obj.pageGroup = 10;
+		if (!obj.allView) obj.allView = false;
+
+
+		// 링크
+		this.link[obj.id] = obj.link;
+		this.params = obj;
+		this.process();
+	}
+
+	/**
+		선택된 객체의 HTML을 돌려 줍니다.
+		@private
+	*/
+	this.getOuterHtml = function(obj) {
+		if (!obj) return;
+		if (obj.outerHTML) {
+			return obj.outerHTML;
+		}else{
+			return (new XMLSerializer).serializeToString(obj);
+		}
+	}
+
+	/**
+		페이징을 새로 갱신 합니다.
+		@param {int} page 페이지 번호
+		@param {int} totalCount 전체 게시물 수
+		@example
+		GPaging.update(1, 10);
+	*/
+	this.update = function(page, totalCount) {
+		if (typeof(page) != 'undefined') {
+			this.params.page = page;
+		}
+		if (typeof(totalCount) != 'totalCount') {
+			this.params.totalCount = totalCount;
+		}
+		
+		this.process();
+	}
+
+	/**
+		기본 프로세스
+		@private
+	*/
+	this.process = function() {
+		var obj = this.params;
+		var p = "#"+ obj.id;
+
+		if (!this.isLoaded.id) {
+			if ($(p +" .first_page").html())	this.def.first_page = this.getOuterHtml($(p +" .first_page").get(0));
+			if ($(p +" .prev_page").html())		this.def.prev_page = this.getOuterHtml($(p +" .prev_page").get(0));
+			if ($(p +" .prev_pageGroup").html())this.def.prev_pageGroup = this.getOuterHtml($(p +" .prev_pageGroup").get(0));
+			if ($(p +" .now_index").html())		this.def.now_index = this.getOuterHtml($(p +" .now_index").get(0));
+			if ($(p +" .gubun_index").html())	this.def.gubun_index = this.getOuterHtml($(p +" .gubun_index").get(0));
+			if ($(p +" .normal_index").html())	this.def.normal_index = this.getOuterHtml($(p +" .normal_index").get(0));
+			if ($(p +" .next_pageGroup").html())this.def.next_pageGroup = this.getOuterHtml($(p +" .next_pageGroup").get(0));
+			if ($(p +" .next_page").html())		this.def.next_page = this.getOuterHtml($(p +" .next_page").get(0));
+			if ($(p +" .last_page").html())		this.def.last_page = this.getOuterHtml($(p +" .last_page").get(0));
+			
+			this.isLoaded.id = true;
+		}
+
+		$(p).html(""); // 영역 제거
+
+		// 자료의 수가 없으면 표기하지 않습니다.
+		if (obj.totalCount == 0) {
+			$(p).hide();
+			return;
+		}
+
+		var html = "", tmp="";
+		var totalPage = Math.ceil(obj.totalCount / obj.rows);
+		if (obj.page > totalPage) obj.page = totalPage;
+
+		var totalPageGroup = Math.ceil(totalPage/obj.pageGroup);
+		var curPageGroup = Math.ceil(obj.page / obj.pageGroup)
+
+
+		// first_page
+		if (this.def.first_page && obj.page != 1) {
+			$(p).append(this.def.first_page.replace(/\{\{num\}\}/g,1));
+			this.setLink(p +" .first_page", obj.id, 1);
+		}else if (this.def.first_page && obj.allView) {
+			$(p).append(this.def.first_page.replace(/\{\{num\}\}/g,1));
+		}
+
+		// prev_pageGroup
+		if (this.def.prev_pageGroup && curPageGroup != 1) {
+			$(p).append(this.def.prev_pageGroup.replace(/\{\{pageGroup\}\}/g, obj.pageGroup));
+			this.setLink(p +" .prev_pageGroup", obj.id, (curPageGroup - 1) * obj.pageGroup);
+		}else if(this.def.prev_pageGroup && obj.allView) {
+			$(p).append(this.def.prev_pageGroup.replace(/\{\{pageGroup\}\}/g, obj.pageGroup));
+		}
+		
+		// prev_page
+		if (this.def.prev_page && obj.page != 1) {
+			$(p).append(this.def.prev_page.replace(/\{\{num\}\}/g, obj.page-1));
+			this.setLink(p +" .prev_page", obj.id, obj.page-1);
+		}else if(this.def.prev_page && obj.allView) {
+			$(p).append(this.def.prev_page.replace(/\{\{num\}\}/g, obj.page-1));
+		}
+		
+		// index
+		var isIndex = false;
+		var cnt = 0;
+		for (var i=(curPageGroup * obj.pageGroup - obj.pageGroup + 1), c=curPageGroup * obj.pageGroup ; i<=c ;i++ ) {
+			if (i > totalPage) break;
+
+			if (cnt != 0 && this.def.gubun_index) {
+				$(p).append(this.def.gubun_index);
+			}
+			if (i == obj.page) {
+				if (this.def.now_index) {
+					$(p).append(this.def.now_index.replace(/\{\{num\}\}/g, i));
+				}
+			}else{
+				if (this.def.normal_index) {
+					$(p).append(this.def.normal_index.replace(/\{\{num\}\}/g, i));
+				}
+			}
+
+			cnt++;
+			isIndex = true;
+		}
+		if (isIndex) {
+			this.setLink(p +" .now_index", obj.id);
+			this.setLink(p +" .normal_index", obj.id);
+		}
+
+		// next_page
+		if (this.def.next_page && obj.page != totalPage) {
+			$(p).append(this.def.next_page.replace(/\{\{num\}\}/g, obj.page +1));
+			this.setLink(p +" .next_page", obj.id, obj.page +1);
+		}else if(this.def.next_page && obj.allView) {
+			$(p).append(this.def.next_page.replace(/\{\{num\}\}/g, obj.page +1));
+		}
+
+		// next_pageGroup
+		if (this.def.next_pageGroup && curPageGroup != totalPageGroup) {
+			$(p).append(this.def.next_pageGroup.replace(/\{\{pageGroup\}\}/g, obj.pageGroup));
+			this.setLink(p +" .next_pageGroup", obj.id, (curPageGroup * obj.pageGroup) +1 ) ;
+		}else if(this.def.next_pageGroup && obj.allView) {
+			$(p).append(this.def.next_pageGroup.replace(/\{\{pageGroup\}\}/g, obj.pageGroup));
+		}
+		
+		// last_page
+		if (this.def.last_page && totalPage != obj.page) {
+			$(p).append(this.def.last_page.replace(/\{\{num\}\}/g, totalPage));
+			this.setLink(p +" .last_page", obj.id, totalPage);
+		}else if(this.def.last_page && obj.allView) {
+			$(p).append(this.def.last_page.replace(/\{\{num\}\}/g, totalPage));
+		}
+
+		$(p).show();
+	}
+
+	/**
+		링크를 만들어 줍니다.
+		@private
+	*/
+	this.setLink = function(str, id, num) {
+		var self = this;
+		if (typeof(this.link[id]) == 'function') {
+			$(str).each(function(){
+				if (!$(this).attr("page")) $(this).attr("page", num);
+				var page = $(this).attr("page");
+				if (this.tagName == "A" && page) {
+					$(this).attr("href", "#page" + page);
+					$(this).click(function(){
+						self.link[id](page);
+						return false;
+					});
+				}
+			});
+		}else{
+			$(str).each(function(){
+				if ($(this).attr("page")) {
+					$(this).attr("href", self.link[id].replace(/\{\{page\}\}/g, $(this).attr("page")));
+				}else{
+					$(this).attr("href", self.link[id].replace(/\{\{page\}\}/g, num));
+				}
+			});
+		}
+	}
+}
+
+/**
+	미리 생성된 객체 {@link clsPaging} 참고
+	@namespace clsPaging	
+	@see clsPaging#action 페이징 선언
+	@see clsPaging#update 페이징 갱신
+*/
+var paging = new clsPaging();
