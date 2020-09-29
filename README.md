@@ -20,7 +20,7 @@ The purpose of this competition is to provide new business models and fresh idea
 
 ### Hyeonpung Data(현풍데이타)
 
-- **고낙헌([nakon-zoe](https://github.com/nakon-zoe)) **
+- **고낙헌([nakon-zoe](https://github.com/nakon-zoe))**
 - **김주형([kimjh5182](https://github.com/kimjh5182))**
 - **정회성([Hoesung-Jung](https://github.com/Hoesung-Jung))**
 - **최세영([cyclone989](https://github.com/cyclone989))**
