@@ -8,6 +8,7 @@ The purpose of this competition is to provide new business models and fresh idea
 
 ![sns_thumb2020](./img/sns_thumb2020.jpg)
 
+Because of copyright, raw data was not added. If you have any questions regarding the related matter, contact us at the information below.
 
 
 ## 🐉 Topic
